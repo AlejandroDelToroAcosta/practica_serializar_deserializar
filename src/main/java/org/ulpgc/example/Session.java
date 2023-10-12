@@ -1,6 +1,7 @@
 package org.ulpgc.example;
+import java.io.Serializable;
 
-public class Session {
+public class Session implements Serializable {
     private int capacity;
     private String hour;
 
@@ -8,7 +9,7 @@ public class Session {
     private final Movie movie;
     private final Theater theater;
 
-    public Session(int capacity, String hour, Movie movie, Theater theater) {
+    public Session (int capacity, String hour, Movie movie, Theater theater) {
         this.capacity = capacity;
         this.hour = hour;
         this.movie = movie;

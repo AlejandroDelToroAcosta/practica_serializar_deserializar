@@ -1,9 +1,8 @@
 package org.ulpgc.example;
 
 import com.google.gson.Gson;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 
+import java.io.*;
 
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
@@ -47,8 +46,26 @@ public class Main {
         } catch (Exception exception) {
             exception.printStackTrace();
         }
+        ////Ejercicio2///////////////////////
+        try {////Deserializar//////////
+            Gson newGson = new Gson();
+            BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\aadel\\Desktop\\Segundo\\DACD\\prueba3.txt"));
+            String sesionFile = reader.readLine();
+            System.out.println(sesionFile);
+            reader.close();
 
+        } catch (Exception exception) {
+            exception.printStackTrace();
 
+        }
+        /////Serializar con OutputStream////////////
+        try{
+            ObjectOutputStream serialized_session = new ObjectOutputStream(new FileOutputStream("C:\\Users\\aadel\\Desktop\\Segundo\\DACD\\prueba4.txt"));
+            serialized_session.writeObject(session);
+            serialized_session.close();
 
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
     }
 }
