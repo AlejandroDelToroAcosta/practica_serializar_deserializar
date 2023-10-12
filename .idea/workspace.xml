@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e764363c-1074-4882-b0c6-97d88b49e9a8" name="Changes" comment="ejercicio1">
+    <list default="true" id="e764363c-1074-4882-b0c6-97d88b49e9a8" name="Changes" comment="ejercicio2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/example/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/example/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/example/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/example/Session.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/example/Theater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/example/Theater.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +72,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696874307222</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ejercicio2">
+      <option name="closed" value="true" />
+      <created>1697128228080</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697128228080</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,7 +96,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ejercicio1" />
-    <option name="LAST_COMMIT_MESSAGE" value="ejercicio1" />
+    <MESSAGE value="ejercicio2" />
+    <option name="LAST_COMMIT_MESSAGE" value="ejercicio2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

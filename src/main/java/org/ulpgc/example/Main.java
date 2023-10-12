@@ -3,6 +3,8 @@ package org.ulpgc.example;
 import com.google.gson.Gson;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
@@ -29,19 +31,16 @@ public class Main {
         System.out.println(json2);
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\aadel\\Desktop\\Segundo\\DACD\\prueba.txt"))) {
-            // Escribir JSON en el archivo
             writer.write(json);
         } catch (Exception exception) {
             exception.printStackTrace();
         }
         try (BufferedWriter writer1 = new BufferedWriter(new FileWriter("C:\\Users\\aadel\\Desktop\\Segundo\\DACD\\prueba2.txt"))) {
-            // Escribir JSON en el archivo
             writer1.write(json1);
         } catch (Exception exception) {
             exception.printStackTrace();
         }
         try (BufferedWriter writer2 = new BufferedWriter(new FileWriter("C:\\Users\\aadel\\Desktop\\Segundo\\DACD\\prueba3.txt"))) {
-            // Escribir JSON en el archivo
             writer2.write(json2);
         } catch (Exception exception) {
             exception.printStackTrace();
@@ -67,5 +66,16 @@ public class Main {
         }catch (Exception ex){
             ex.printStackTrace();
         }
+        ////EJERCICIO 3/////
+        try {
+            ObjectInputStream deserializedSession = new ObjectInputStream(new FileInputStream("C:\\Users\\aadel\\Desktop\\Segundo\\DACD\\prueba4.txt"));
+            Session sessionDeserialized = (Session) deserializedSession.readObject();
+            System.out.println(sessionDeserialized);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 }
